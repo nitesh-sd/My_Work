@@ -7,23 +7,25 @@ public class JTCWebAppInitializer extends AbstractAnnotationConfigDispatcherServ
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
 		// TODO Auto-generated method stub
-		System.out.println("GetRootConfigClass inside JTCWebAppInitializer  ");
-//		Class cls[] = {JTCWebConfig.class};
+		System.out.println("GetRootConfigClasses********* ");
+		//Class cls[] = {JTCWebConfig.class};
 		return new Class[] {JTCWebConfig.class};
 	}
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
 		// TODO Auto-generated method stub
-		System.out.println("getServletConfigClasses inside JTCWebAppInitializer ");
+		System.out.println("getServletConfigClasses********* ");
+
 		return new Class[] {JTCWebConfig.class};
 	}
 
 	@Override
 	protected String[] getServletMappings() {
 		// TODO Auto-generated method stub
-		System.out.println("getServletMappings inside JTCWebAppInitializer ");
-		return null;
+		System.out.println("getServletMappings********* ");
+
+		return new String[] {"*.jtc"};
 	}
 
 }
